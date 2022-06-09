@@ -2,6 +2,7 @@ import React from "react";
 import '../../assets/css/productList.css';
 import ProductTable from "./ProductTable";
 
+
 const ProductList = () => {
 
     return (

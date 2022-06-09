@@ -113,3 +113,43 @@ table tbody tr td .bst_performance {
     font-style: normal;
     font-weight: 500;
 }
+
+
+@media screen and (max-width: 767.99px) {
+    
+    .productList__header h3{
+        font-size: 16px;
+    }
+
+    .product_list_sortings {
+        position: relative;
+        width: 100%;
+    }
+    
+    .product_list_sortings .content {
+        position: absolute;
+        right: 0px;
+    }
+    
+    .product_list_sortings label {
+        position: relative;
+        color: #74777B;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .product_list_sortings select {
+        width: 100px !important;
+        height: 30px;
+        outline: none;
+        /* margin-left: 8px; */
+        color: #74777B;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 300;
+        border: 1px solid #B7B8BC;
+        transition: .4s;
+        cursor: pointer;
+    }
+}

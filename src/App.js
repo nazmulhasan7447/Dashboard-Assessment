@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import ProductListContext from './components/context/ProductListContext';
 import { product_list } from './productList';
 
+
 function App() {
 
   const [productList, setProductList] = useState(product_list);

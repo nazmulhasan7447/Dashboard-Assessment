@@ -4,8 +4,7 @@ import '../../assets/css/navbar.css';
 import NavSearchBar from "./SearchBar";
 import AddProductModalBtn from "./AddProductModalBtn";
 import '../../assets/css/addProduct.css';
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '../../assets/css/mediaQueries.css';
 import AddProduct from "./AddProduct";
 
 const NavRoot = () => {
