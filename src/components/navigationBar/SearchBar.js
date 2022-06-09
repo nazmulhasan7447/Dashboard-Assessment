@@ -8,10 +8,8 @@ const NavSearchBar = () => {
 
     const { rootData } = useContext(ProductListContext);
     const {setRootData} = useContext(ProductListContext);
-    const {setProductList} = useContext(ProductListContext);
-    
-    // console.log(rootData)
 
+    // function for searching product by title or brand
     const searchByTitleOrBrand = (searchText) => {
 
         if (searchText !== '') {

@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <ProductListContext.Provider value={{rootData, setRootData, setProductList}}>
+      <ProductListContext.Provider value={{rootData, setRootData}}>
         <NavRoot />
         <ChartRoot />
         <ProductList />

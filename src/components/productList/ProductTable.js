@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import '../../assets/css/productList.css';
 import DefaultPhoneImg from '../../assets/images/default_phone_img.jpg';
-import LoadingSpinner from "./Spinner";
 import ProductListContext from "../context/ProductListContext";
 import { product_list } from "../../productList";
 
@@ -13,23 +12,14 @@ const ProductTable = () => {
 
     const [productLengthLimit, setProductLengthLimit] = useState(10)
 
-    const [showSpinner, setShowSpinner] = useState(false);
-
     const loadMoreProduct = () => {
 
-        setShowSpinner(true);
         setProductLengthLimit(productLengthLimit + 10);
 
         let prev_productStartingLenght = productLengthLimit - 10;
 
-        console.log(prev_productStartingLenght)
-        console.log(productLengthLimit)
-
         setProductList(rootData.products.slice(prev_productStartingLenght, productLengthLimit))
 
-        setTimeout(() => {
-            setShowSpinner(false);
-        }, 500);
     }
 
     return (
@@ -79,10 +69,6 @@ const ProductTable = () => {
                     </table>
                 </div>
 
-                {/* <LoadingSpinner /> */}
-                {
-                    showSpinner && <LoadingSpinner />
-                }
                 <button type="button" onClick={loadMoreProduct} style={{ 'border': 'none', 'outline': 'none', 'background': '#0095A0', 'marginBottom': '20px', 'marginTop': '20px', 'color': 'white', 'width': '120px', 'height': '35px', 'borderRadius': '3px', 'marginLeft': 'auto', 'marginRight': 'auto' }}>Load More</button>
             </div>
         </React.Fragment>
