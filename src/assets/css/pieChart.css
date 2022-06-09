@@ -1,0 +1,43 @@
+.pie_chart_status {
+    list-style-type: none;
+    position: relative;
+    margin-top: 50%;
+    left: 3%;
+}
+
+.pie_chart_status li {
+    color: #74777B;
+}
+
+.pie_chart_status .daraz::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: red;
+    background: rgba(132, 175, 39, 1);
+    left: 0;
+    margin-top: 5px;
+}
+
+.pie_chart_status .bikroy::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: red;
+    background: rgba(1, 189, 203, 1);
+    left: 0;
+    margin-top: 5px;
+}
+
+.pie_chart_status .pickaboo::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: red;
+    background: rgba(255, 194, 57, 1);
+    left: 0;
+    margin-top: 5px;
+}

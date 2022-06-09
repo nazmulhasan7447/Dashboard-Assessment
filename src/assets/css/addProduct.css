@@ -1,0 +1,40 @@
+.add_prodct_modal {
+    border: none !important;
+    outline: none !important;
+}
+
+.modal_header {
+    background-color: rgba(0, 149, 160, 1) !important;
+    color: white !important;
+}
+
+.modal_footer {
+    margin-top: 50px;
+}
+.cancel {
+    background: #B7B8BC;
+    color: white;
+    border: none !important;
+    outline: none !important;
+}
+
+.cancel:hover {
+    background: #B7B8BC;
+    color: white;
+    border: none !important;
+    outline: none !important;
+}
+
+.publish {
+    background: #0095A0;
+    color: white;
+    border: none !important;
+    outline: none !important;
+}
+
+.publish:hover {
+    background: #0095A0;
+    color: white;
+    border: none !important;
+    outline: none !important;
+}

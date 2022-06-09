@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300&display=swap');
+
+
+.productList__header h3{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #575757;
+}
+
+.product_list_sortings {
+    position: relative;
+}
+
+.product_list_sortings .content {
+    position: absolute;
+    right: 0px;
+}
+
+.product_list_sortings label {
+    position: relative;
+    color: #74777B;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.product_list_sortings select {
+    min-width: 150px;
+    height: 35px;
+    outline: none;
+    margin-left: 8px;
+    color: #74777B;
+    font-family: 'Poppins';
+    font-weight: 400;
+    border: 1px solid #B7B8BC;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.product_list_sortings select:hover {
+    background: #0095A0;
+    color: #FFFFFF;
+}
+
+table {
+    color: #74777B !important; 
+}
+
+.product_model_main {
+    display: flex;
+}
+
+
+.product_model_main .prodct_img {
+    width: 60px;
+    height: 60px;
+}
+
+.product_model_main .prodct_img img{
+    width:  100%;
+    height: 100%;
+} 
+
+.product_model_main .product_title_brand {
+    margin-left: 10px;
+}
+
+.product_model_main .product_title_brand h4 {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(87, 87, 87, 1);
+}
+
+.product_model_main .product_title_brand h5 {
+    font-size: 14px;
+}
+
+table tbody tr td:not(:first-child) {
+    padding-top: 25px;
+}
+
+table tbody tr td button {
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-family: 'Poppins';
+    margin-left: 3px;
+}
+
+table tbody tr td .bst_value {
+    background: rgba(221, 158, 16, 0.1);
+    border: 0.5px solid #DD9E10;
+    border-radius: 2px;
+    color: rgba(221, 158, 16, 1);
+    font-style: normal;
+    font-weight: 500;
+}
+
+table tbody tr td .bst_camera {
+    background: rgba(135, 76, 114, 0.1);
+    border: 0.5px solid #874C72;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 500;
+    color: rgba(135, 76, 114, 1);
+}
+
+table tbody tr td .bst_performance {
+    background: rgba(17, 160, 219, 0.1);
+    border: 0.5px solid #11A0DB;
+    border-radius: 2px;
+    color: rgba(17, 160, 219, 1);
+    font-style: normal;
+    font-weight: 500;
+}

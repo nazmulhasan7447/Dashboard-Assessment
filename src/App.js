@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useTransition } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavRoot from './components/navigationBar/NavRoot';
+import ChartRoot from './components/charts/ChartRoot';
+import ProductList from './components/productList/ProductList';
+import Footer from './components/footer/Footer';
+import ProductListContext from './components/context/ProductListContext';
+import { product_list } from './productList';
 
 function App() {
+
+  const [productList, setProductList] = useState(product_list);
+
+  const [rootData, setRootData] = useState({
+    products: productList,
+    searchedText: '',
+  })
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProductListContext.Provider value={{rootData, setRootData, setProductList}}>
+        <NavRoot />
+        <ChartRoot />
+        <ProductList />
+        <Footer />
+      </ProductListContext.Provider>
     </div>
   );
 }

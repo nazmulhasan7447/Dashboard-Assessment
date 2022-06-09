@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300&display=swap');
+
+
+nav {
+    background: rgba(0, 149, 160, 1);
+}
+
+nav .navbar-brand {
+    font-weight: Bold;
+    color: white !important;
+}
+
+.searchBar_addProduct_section {
+    display: flex;
+}
+
+.searchBar_addProduct_section form {
+    position: relative;
+}
+
+.searchBar_addProduct_section form input {
+    background: rgba(0, 149, 160, 1);
+    height: 35px;
+    border: 1px solid #FFFFFF;
+    text-indent: 5px;
+    caret-color: #FFFFFF;
+    outline: none;
+    min-width: 400px;
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+
+.searchBar_addProduct_section form input::placeholder {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-indent: 5px;
+}
+
+.searchBar_addProduct_section form button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: none;
+    background: rgba(0, 149, 160, 1);
+    color: #FFFFFF;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.searchBar_addProduct_section .add_product_btn button{
+    position: relative;
+    height: 35px;
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(247, 245, 242, 1);
+    color: rgba(0, 149, 160, 1);
+    border-radius: 2px;
+}

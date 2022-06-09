@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300&display=swap');
+
+
+.chart_title h3 {
+    font-size: 24px;
+    color: #575757;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
