@@ -10,10 +10,10 @@ import { product_list } from './productList';
 
 function App() {
 
-  const [productList, setProductList] = useState(product_list);
+  // const [productList, setProductList] = useState(product_list);
 
   const [rootData, setRootData] = useState({
-    products: productList,
+    products: product_list,
     searchedText: '',
   })
 

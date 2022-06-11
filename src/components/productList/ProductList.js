@@ -23,8 +23,9 @@ const ProductList = () => {
                                 <label>Sort by:</label>
                                 <select name="sort_product_list">
                                     <option>All products</option>
-                                    <option>Price</option>
-                                    <option>Max used</option>
+                                    <option>Best Value</option>
+                                    <option>Best Performance</option>
+                                    <option>Best Camera</option>
                                 </select>
                             </div>
                         </div>

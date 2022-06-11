@@ -11,21 +11,29 @@ const NavSearchBar = () => {
 
     // function for searching product by title or brand
     const searchByTitleOrBrand = (searchText) => {
+        
 
-        if (searchText !== '') {
-            console.log(`search text: ${searchText}`)
-            let updated_productList = rootData.products.filter((product)=>product.phone_title.toLowerCase().includes(searchText) || product.brand.toLowerCase().includes(searchText));
+        let searchedProductList = product_list.filter((product)=>product.phone_title.toLowerCase().includes(searchText) || product.brand.toLowerCase().includes(searchText));
+        
+        if (searchText !== '' && searchedProductList.length > 0) {
             
             setRootData(()=>{
-                return {...rootData, products:updated_productList, searchedText: searchText}
+                return {...rootData, products:searchedProductList, searchedText: searchText}
             })
         }
 
-        else {
+        if(searchedProductList.length <= 0) {
             setRootData(()=>{
-                return {...rootData, products:product_list, searchedText: searchText}
+                return {...rootData, products:searchedProductList, searchedText: searchText}
             })
         }
+
+
+        // else {
+        //     setRootData(()=>{
+        //         return {...rootData, products:product_list, searchedText: searchText}
+        //     })
+        // }
     }
 
 
